@@ -2,7 +2,7 @@ body {
     font-family: 'Courier', monospace;
     font-size: medium;
     margin: 3em;
-    max-width: 900px;
+    max-width: 1000px;
     line-height: 1.5;
 }
 
@@ -65,7 +65,7 @@ ul {
 
 table {
     border-collapse: collapse;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 th, td {
@@ -112,7 +112,7 @@ pre{
     overflow: auto;
 }
 
-@media only screen and (max-width: calc(900px + 24em)) {
+@media only screen and (max-width: calc(1000px + 24em)) {
     #table-of-contents {
         display: none;
     }
