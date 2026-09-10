@@ -5,7 +5,7 @@ let num_digits n =
   in
   count (abs n)
 
-
+let is_perfect_pow (_k : int) (_n : int) : bool = false
 
 let rec num_factors (k:int) : int = 
   let rec aux (res : int) (counter: int) (k:int) = 

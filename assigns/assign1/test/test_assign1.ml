@@ -12,7 +12,7 @@ let num_digits_tests () =
     assert (num_digits (-121) = 3);
   ]
 
-(*
+
 let is_perfect_pow_tests () =
   [
     assert (is_perfect_pow 1 16);
@@ -21,7 +21,7 @@ let is_perfect_pow_tests () =
     assert (is_perfect_pow 4 16);
     assert (is_perfect_pow 3 (-8));
   ]
-*)
+
 
 let num_factors_tests () =
   [
@@ -62,8 +62,10 @@ let _run_tests =
     let num_digits (_n: int): int = (* CHANGE _n to n *)
   assert false
 
-let is_perfect_pow (_i: int) (_n: int): bool = (* CHANGE _i and _n to i and n *)
+(*
+  let is_perfect_pow (_i: int) (_n: int): bool = (* CHANGE _i and _n to i and n *)
   assert false
+*)
 
 let num_factors (_n: int): int = (* CHANGE _n to n *)
   assert false
