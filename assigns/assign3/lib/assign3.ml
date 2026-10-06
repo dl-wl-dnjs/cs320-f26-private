@@ -37,3 +37,18 @@ let split_by_ws' (s : string) : string list =
   in
   let (word, res) = loop (explode s) in
   if word = [] then res else implode word :: res
+
+
+  let smth l i j = 
+    if j < 0 then []
+    else if i < 0 then [] 
+    else if j < i then [] else
+    let rec aux acc idx lst =
+    match lst with
+    | [] -> []
+    | h :: t ->
+      if idx < i then aux acc (idx + 1) t
+      else if idx > j then acc 
+      else aux (h :: acc) (idx + 1) t
+    in
+    aux [] 0 l
