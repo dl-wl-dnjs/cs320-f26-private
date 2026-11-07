@@ -1,0 +1,9 @@
+(let mult
+  (lambda m Nat
+    (lambda n Nat
+      (let add
+        (lambda a Nat
+          (lambda b Nat
+            (rec-Nat a b (lambda p Nat (lambda x Nat (add1 x))))))
+      (rec-Nat m 0 (lambda p Nat (lambda acc Nat ((add n) acc)))))))
+((mult 6 ) 7))
